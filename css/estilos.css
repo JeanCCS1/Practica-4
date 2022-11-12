@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url(../Imagenes/Fondo.jpg);
+    background-size: 100%;
+}
+.pokedex-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pokedex{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/*PARTE ROJA IZQUIERDA*/
+#parte-Roja-Izquierda{
+    background-color: #c00e0e;
+    height: 700px;
+    width: 450px;
+    border-radius: 40px 0px 0px 40px;
+}
+.circulo-azul{
+    height: 85px;
+    width: 85px;
+    border: 4px solid white;
+    border-radius: 50px;
+    transform: translate(25%, 25%);
+    background: rgb(61, 164, 218);
+        background: linear-gradient(270deg, rgba(61, 164, 218, 1) 0%, rgba(183, 250, 255, 1) 50%, rgba(61, 164, 218, 1) 100%);
+}
+.circulo-rojo{
+    height: 31px;
+    width: 31px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: red;
+    transform: translate(350%, -180%);
+}
+.circulo-amarillo {
+    height: 31px;
+    width: 31px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: yellow;
+    transform: translate(500%, -280%);
+}
+.circulo-verde {
+    height: 31px;
+    width: 31px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: green;
+    transform: translate(650%, -380%);
+}
+.parte-gris{
+    height: 350px;
+    width: 350px;
+    border: 1px solid black;
+    background-color: #b0b0b0;
+    transform: translate(15%,-10%);
+    border-radius: 15px 15px 15px 50px;
+}
+.puntito-rojo-1{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(87, 13, 13);
+    border-radius: 50px;
+    transform: translate(1200%, -3700%);
+}
+.puntito-rojo-2 {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(87, 13, 13);
+    border-radius: 50px;
+    transform: translate(3200%, -3800%);
+}
+#pantalla{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Imagenes/Fondo-Imagen.jpg);
+    height: 200px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 15px;
+    transform: translate(25%, -170%);
+    margin-bottom: 25px;
+}
+
+#pokeImg{
+    object-fit: contain;
+    background-size: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.boton-rojo{
+    height: 34px;
+    width: 34px;
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: rgb(134, 27, 27);
+    transform: translate(225%, -900%);
+    
+}
+.barra-negra1{
+    height: 2px;
+    width: 120px;
+    background-color: black;
+    border: 10px;
+    transform: translate(210%, -19300%);
+}
+.barra-negra2 {
+    height: 2px;
+    width: 120px;
+    background-color: black;
+    border: 10px;
+    transform: translate(210%, -19100%);
+}
+.barra-negra3 {
+    height: 2px;
+    width: 120px;
+    background-color: black;
+    border: 10px;
+    transform: translate(210%, -18900%);
+}
+.barra-negra4 {
+    height: 2px;
+    width: 120px;
+    background-color: black;
+    border: 10px;
+    transform: translate(210%, -18700%);
+}
+.barra-negra5 {
+    height: 2px;
+    width: 120px;
+    background-color: black;
+    border: 10px;
+    transform: translate(210%, -18500%);
+}
+.boton-azul{
+    height: 70px;
+    width: 70px;
+    background: blue;
+    border-radius: 50px;
+    transform: translate(100%, -460%);
+}
+.boton-verde{
+    height: 20px;
+    width: 80px;
+    background-color: green;
+    border-radius: 20px;
+    transform: translate(190%, -1890%);
+}
+.boton-rojo2 {
+    height: 20px;
+    width: 80px;
+    background-color: rgb(134, 17, 17);
+    border-radius: 20px;
+    transform: translate(300%, -1980%);
+}
+.cruz-medio{
+    background-color: #1f2025;
+    height: 34px;
+    width: 34px;
+    transform: translate(976%, -1112%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cruz1{
+    background-color: #1f2025;
+    height: 30px;
+    width: 35px;
+    border-radius: 10px 0px 0px 10px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: translate(799%, -1212%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cruz2 {
+    background-color: #1f2025;
+    height: 30px;
+    width: 35px;
+    border-radius: 0px 10px 10px 0px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: translate(987%, -1312%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cruz3 {
+    background-color: #1f2025;
+    height: 35px;
+    width: 30px;
+    border-radius: 10px 10px 0px 0px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    transform: translate(976%, -1392%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cruz4 {
+    background-color: #1f2025;
+    height: 35px;
+    width: 30px;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    transform: translate(975%, -1311%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*VISAGRA*/
+#visagra{
+    height: 700px;
+    width: 70px;
+    background: rgb(87, 13, 13);
+        background: linear-gradient(270deg, rgba(87, 13, 13, 1) 0%, rgba(192, 14, 14, 1) 50%, rgba(87, 13, 13, 1) 100%); 
+}
+.visagra-cuadro-1{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(87, 13, 13);
+    transform: translate(0, 215%);
+}
+.visagra-cuadro-2{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(87, 13, 13);
+    transform: translate(0, 650%);
+}
+/*PARTE ROJA DERECHA*/
+
+
+#input-text{
+    grid-area: input-text;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 10px;
+    outline: none;
+}
+
+.input-green {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.rside{
+    width: 380px;
+    height: 600px;
+    background-color: #ce1131;
+    border-radius: 20px;
+    box-shadow: 3px 4px 10px 1px #44444477;
+    margin-top: 5%;
+}
+
+.tifra{
+    color: greenyellow;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.resultado{
+    color: white;
+}
+
+
+.black{
+    background-color: #222222;
+}
+#pname{
+    color: green;
+    text-align: center;
+    font-size: 20px;
+}
+#name{
+    background-color: #eeeeee;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin: 2rem;
+    text-align: center;
+    line-height: 80px;
+}
+.white{
+    background-color: white;
+}
+.sp{
+    color: white;
+    padding: 2px;
+}
+.fostat{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.bar{
+  width: 100%;
+  height: 3px;
+  
+  margin-top: 1px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+.cele{
+  background-color: #009dd4;
+}
+.item{
+
+  width: 13.5%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.stat-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+    padding-left: 15px;
+}
+
+
+.spblue{
+    background-color: #3979d8;
+}
+.spgreen{
+    background-color: #88c950;
+}
+.spyellow{
+    background-color: #edc235;
+}
+.stats-container{
+    background-color: #222222;
+    width: 90%;
+    height: 15rem; 
+    border-radius: 10px;
+    margin: 0 auto 1rem auto;
+    font-size: 0.8rem;
+    
+    gap: 1px;
+}
+.stats-container > p{
+    margin-top: 5px;
+}
+
+.blackbox{
+    width: 33%;
+    height: 35%;
+    background-color: #222222;
+    border-radius: 10px;
+    font-size: 12px;
+    color: greenyellow;
+    padding-left: 15px;
+}
+.fo{
+    width: 90%;
+    height: 22%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedorboton{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.boton{
+    color: #FFFF;
+    font-size: 15px;
+    background-color: rgb(19, 73, 236);
+    border: 1px solid rgb(19, 73, 236);
+    box-shadow: rgb(19, 73, 236, 0.9);
+    padding: 10px 40px;
+    border-radius: 8%;
+    margin-top: -20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.boton:hover {
+    color: rgb(19, 73, 236);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(19, 73, 236);
+}
