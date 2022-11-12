@@ -27,7 +27,8 @@ const fetchPokemon = async () => {
             PokeId(pokeid);
             pokeData(ti,fra);
             AlturaPeso(data.height,data.weight);
-            StatusPone(data.stats)
+            StatusPone(data.stats);
+            move(data.moves);
         }
     }
     else
@@ -52,22 +53,14 @@ const pokeImage = (url,bandera = false) => {
 const pokeData = (t,f) => {
     let ti="";
     t.forEach(el => {
-        ti+='<span class="sp spblue"  style="margin-right: 2px">'+el.type.name+"</span>";
+        ti+='<span class="sp spblue"  style="margin-right: 5px">'+el.type.name+"</span>";
     });
     const pname=document.getElementById("tipo");
     pname.innerHTML=ti;
     let val="";
     let bol=true;
     f.forEach(el => {
-        if(bol)
-        {
-            val+='<span class="sp spgreen" style="margin-right: 2px">'+el.ability.name+"</span>";
-            bol=false;
-        }
-        else {
-            val+='<span class="sp spyellow" style="margin-right: 2px">'+el.ability.name+"</span>";
-            bol=true;
-        }
+        val+='<span class="sp spgreen" style="margin-right: 5px">'+el.ability.name+"</span>";
     });
     const p2name=document.getElementById("fraqueza");
     p2name.innerHTML=val;
@@ -106,4 +99,17 @@ const StatusPone = (arr) =>{
         }
 
     }
+}
+
+const move = (t)=>{
+    let ti="";
+    for (let index = 0; index < 3; index++) {
+        ti+= '<span class="sp spyellow"  style="margin-right: 5px">'+t[index].move.name+"</span>";
+    }
+
+    if(t.length > 3){
+        ti+= '<span class="sp spyellow"  style="margin-right: 5px">'+"..."+"</span>";
+    }
+    const movimienta =document.getElementById("movimientos");
+    movimienta.innerHTML = ti;
 }
